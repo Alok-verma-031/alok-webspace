@@ -286,3 +286,124 @@ width: 100%;
 {
     font-size: 12px;
 }
+/* ==========================================================================
+   GLOBAL GLASSMORPHISM & THEME BORDER STYLING (ALL SECTIONS)
+   ========================================================================== */
+
+/* 1. GLOBAL CARDS & CONTAINERS 
+   (About cards, Skills boxes, Project cards, Contact boxes) */
+#about .card, 
+#about .bg-body-tertiary,
+#skills .card, 
+#skills .bg-body-tertiary,
+#project .bg-body-tertiary,
+#contact .card,
+#resume .card {
+    background-color: rgba(16, 42, 52, 0.65) !important;
+    border: 1px solid rgba(212, 163, 115, 0.22) !important;
+    border-radius: 12px !important;
+    backdrop-filter: blur(8px);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Hover Lift & Amber Glow for all Cards */
+#about .card:hover, 
+#about .bg-body-tertiary:hover,
+#skills .card:hover, 
+#skills .bg-body-tertiary:hover,
+#project .bg-body-tertiary:hover,
+#contact .card:hover,
+#resume .card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 163, 115, 0.75) !important;
+    box-shadow: 0 12px 28px rgba(212, 163, 115, 0.22) !important;
+}
+
+/* 2. IMAGE WRAPPERS & AVATARS
+   (Project thumbnails, About photo, Profile images) */
+.project-img,
+#about img,
+#home img {
+    border-radius: 10px;
+    border: 1px solid rgba(212, 163, 115, 0.25) !important;
+    transition: border-color 0.3s ease;
+}
+
+#project .bg-body-tertiary:hover .project-img {
+    border-color: rgba(212, 163, 115, 0.6) !important;
+}
+
+/* 3. SKILLS PROGRESS BARS & TECH ICONS */
+#skills progress {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 163, 115, 0.3);
+    background-color: rgba(15, 26, 38, 0.8);
+}
+
+#skills progress::-webkit-progress-bar {
+    background-color: rgba(15, 26, 38, 0.8);
+}
+
+#skills progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #c76606, #D4A373);
+}
+
+.move-img {
+    border: 1px solid rgba(212, 163, 115, 0.2);
+    border-radius: 8px;
+    padding: 6px;
+    background: rgba(16, 42, 52, 0.4);
+    transition: all 0.3s ease;
+}
+
+.move-img:hover {
+    transform: scale(1.08);
+    border-color: rgba(212, 163, 115, 0.8);
+    box-shadow: 0 0 15px rgba(212, 163, 115, 0.3);
+}
+
+/* 4. BADGES, TECH TAGS & PILLS */
+#project small.bg-body-secondary,
+.badge-theme {
+    background-color: rgba(212, 163, 115, 0.12) !important;
+    color: #D4A373 !important;
+    border: 1px solid rgba(212, 163, 115, 0.3) !important;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#project .bg-body-tertiary:hover small.bg-body-secondary {
+    border-color: rgba(212, 163, 115, 0.7) !important;
+    background-color: rgba(212, 163, 115, 0.22) !important;
+}
+
+/* 5. FORM INPUTS & TEXTAREAS (Contact Section) */
+.form-control, 
+.form-select {
+    background-color: rgba(16, 42, 52, 0.7) !important;
+    border: 1px solid rgba(212, 163, 115, 0.3) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, 
+.form-select:focus {
+    background-color: rgba(16, 42, 52, 0.9) !important;
+    border-color: #D4A373 !important;
+    box-shadow: 0 0 10px rgba(212, 163, 115, 0.35) !important;
+}
+
+/* 6. DIVIDERS & SEPARATORS INSIDE CARDS */
+.card hr, 
+.bg-body-tertiary hr {
+    border-color: rgba(212, 163, 115, 0.25) !important;
+    opacity: 0.7;
+}
+
+
+
+
+
